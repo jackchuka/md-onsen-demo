@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="build/css/onsenui.css">  
+    <link rel="stylesheet" href="build/css/onsen-css-components.css">  
+    <link rel="stylesheet" href="build/css/font_awesome/css/font-awesome.min.css">
+
+    <script src="build/js/angular/angular.js"></script>    
+    <script src="build/js/onsenui.js"></script>    
+
+    <script>
+      ons.bootstrap();
+    </script>
+  </head>
+
+  <body>
+    <ons-page>
+      <ons-toolbar modifier="android">
+        <div class="center">Picture List</div>
+      </ons-toolbar>
+
+      <ons-speed-dial position="right bottom" direction="top" style="z-index: 1000;">
+        <ons-ripple center></ons-ripple>
+        <ons-icon
+          icon="fa-share"
+          size="26px"
+          fixed-width="false"
+          style="vertical-align:middle;">
+        </ons-icon>
+        <ons-speed-dial-item>
+          <ons-ripple center></ons-ripple>
+          <ons-icon
+            icon="fa-facebook"
+            size="20px"
+            fixed-width="false"
+            style="vertical-align:middle;">
+          </ons-icon>
+        </ons-speed-dial-item>
+        <ons-speed-dial-item>
+          <ons-ripple center></ons-ripple>
+          <ons-icon
+            icon="fa-twitter"
+            size="20px"
+            fixed-width="false"
+            style="vertical-align:middle;">
+          </ons-icon>
+        </ons-speed-dial-item>
+        <ons-speed-dial-item>
+          <ons-ripple center></ons-ripple>
+          <ons-icon
+            icon="ion-social-googleplus-outline"
+            size="20px"
+            fixed-width="false"
+            style="vertical-align:middle;">
+          </ons-icon>
+        </ons-speed-dial-item>
+      </ons-speed-dial>
+
+      <ons-list>
+
+        <ons-list-item class="list-item-container">
+        <ons-ripple color="rgba(0, 151, 167,0.2)"></ons-ripple>
+          <ons-row>
+            <ons-col width="66px">
+              <img src="images/location1.png" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                Eiffel Tower
+              </div>
+              <div class="location">
+                <i class="fa fa-map-marker"></i> Paris, France
+              </div>
+              <div class="desc">
+                Eiffel Tower is the symbol of Paris and named by Gustave Eiffel.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="list-item-container">
+        <ons-ripple color="rgba(0, 151, 167,0.2)"></ons-ripple>
+          <ons-row>
+            <ons-col width="66px">
+              <img src="images/location2.png" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                Monument Valley
+              </div>
+              <div class="location">
+                <i class="fa fa-map-marker"></i> Utah, USA
+              </div>
+              <div class="desc">
+                Director John Ford used Monument Valley for a number of his best-known films.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="list-item-container">
+        <ons-ripple color="rgba(0, 151, 167,0.2)"></ons-ripple>
+          <ons-row>
+            <ons-col width="66px">
+              <img src="images/location3.png" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                Mount Fuji
+              </div>
+              <div class="location">
+                <i class="fa fa-map-marker"></i> Japan
+              </div>
+              <div class="desc">
+                Mount Fuji is the highest mountain in Japan and a frequent attractive subject of Japanese art.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="list-item-container">
+        <ons-ripple color="rgba(0, 151, 167,0.2)"></ons-ripple>
+          <ons-row>
+            <ons-col width="66px">
+              <img src="images/location4.png" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                Tokyo Tower
+              </div>
+              <div class="location">
+                <i class="fa fa-map-marker"></i> Tokyo, Japan
+              </div>
+              <div class="desc">
+                Tokyo Tower is a communications and observation tower located in Tokyo, Japan.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+
+        <ons-list-item class="list-item-container">
+        <ons-ripple color="rgba(0, 151, 167,0.2)"></ons-ripple>
+          <ons-row>
+            <ons-col width="66px">
+              <img src="images/location5.jpg" class="thumbnail">
+            </ons-col>
+            <ons-col>
+              <div class="name">
+                Las Vegas
+              </div>
+              <div class="location">
+                <i class="fa fa-map-marker"></i> Neveda, US
+              </div>
+              <div class="desc">
+                Las Vegas is an internationally renowned major resort city known primarily for gambling, shopping, fine dining and nightlife.
+              </div>
+            </ons-col>
+            <ons-col width="40px"></ons-col>
+          </ons-row>
+        </ons-list-item>
+      </ons-list>
+
+    </ons-page>
+
+
+  </body>
+</html>
+
+<style>
+*:not(.fa) {
+  font-family: 'Roboto', sans-serif !important;
+}
+.fab{
+  background-color: #0097A7;
+}
+.navigation-bar {
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.4);
+  background-color: #0097A7;
+  background-image: none;
+  height: 56px;
+}
+.navigation-bar > .navigation-bar__title {
+  color: #fff;
+  line-height: 56px;
+  padding-left: 16px !important;
+}
+.page__content {
+  top: 56px !important;
+}
+.list-item-container {
+  line-height: 1;
+  padding: 16px 0px 16px 16px;
+}
+.fab:active {
+  background-color: #0097A7;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+
+.name {
+  font-weight: 500;
+  line-height: 16px;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.location {
+  font-size: 13px;
+  color: #a5a5a5;
+  margin-bottom: 6px;
+}
+.list__item {
+  border: none !important;
+  background-image: none !important;
+}
+
+.desc {
+  line-height: 1.2;
+  font-size: 13px;
+}
+</style>
